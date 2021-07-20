@@ -1,0 +1,232 @@
+
+
+
+/* Universal Attributes */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    /* border: 1px red solid; */
+
+}
+
+/* Variables */
+:root {
+    /* green scheme */
+    --dark-green: #577568;
+    --light-text: #F6F3F6;
+    --dark-text: #18251e;
+    --dark-alt: #513d51;
+    --light-bg: #cce3deff;
+    --light-head: #f6fff8;
+
+
+    /* Current Scheme */
+    --btn: var(--dark-green);  
+
+    --fancy-font: 'Cinzel Decorative', cursive;
+    --basic-font: 'Open Sans', sans-serif;
+
+ 
+
+
+}
+
+body {
+    background-color: var(--light-bg);
+    font-family: var(--basic-font);
+    
+}
+
+/* utilities */
+
+h1,
+p {
+    color: var(--dark-text);
+}
+
+.btn-custom,
+.btn-custom:hover {
+    background-color: var(--btn);
+    border: 1px solid var(--dark-alt);
+}
+
+.maximg {
+    max-width: 300px;
+}
+
+.right-align {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.left-align {
+    text-align: left;
+}
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    color: var(--dark-alt);
+}
+
+a:hover {
+    background-color: var(--light-head);
+    color: var(--dark-alt);
+}
+
+
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+/* navigation */
+
+.nav-pills .nav-link.active,
+ .nav-pills .show>.nav-link,
+  {
+    background-color: var(--dark-green);
+    
+}
+
+.nav-link {
+    color: var(--dark-text);
+}
+
+.nav-link:hover {
+    color: var(--dark-alt);
+}
+
+/* hero */
+
+.hero-text {
+    font-family: var(--fancy-font);
+}
+
+
+
+/* nav/footer and just footer */
+
+.nav,
+footer {
+    background-color: var(--light-head);
+}
+
+
+footer {
+    margin-top: 10px;
+    height: 40px;
+}
+
+/* projects */
+
+.projects {
+    background-color: var(--light-head);
+}
+
+.carousel-item {
+    overflow: hidden;
+    max-height: 250px;
+}
+
+#webapplg .carousel-item.active {
+    overflow: hidden;
+    max-height: 500px;
+}
+.maincard {
+    height: 450px;
+}
+
+
+/* list of skills */
+
+
+ul.skills {
+    padding: 0;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .skills li {
+    border-radius: 6px;
+    display: inline-block;
+    background: var(--dark-alt);
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+  }
+
+.skills li:nth-child(odd) {
+    background: var(--dark-green);
+  }
+
+
+/* SVG */
+
+  a.github {
+    background-image: url(img/github.svg);
+  }
+
+.github {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+}
+
+
+/* subpages */
+
+.project-desc {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#webapp {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* 
+========================================================================== 
+Media Queries for Mobile and Tablet Views
+========================================================================== 
+*/
+
+/* --------------------------- 768 and smaller screens */
+
+@media screen and (max-width: 1023px){
+
+/* nav bar */
+
+    .nav-pills,
+    .nav-link {
+        padding: 0.5rem;
+    }
+
+    .fixed-top
+    {
+    position: relative;
+    top: auto;
+    }
+
+/* col layout */
+
+#aboutme .row {
+    display: none;
+}
+
+}
