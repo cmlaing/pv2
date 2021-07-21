@@ -102,7 +102,7 @@ a:hover {
 /* navigation */
 
 .nav-pills .nav-link.active,
- .nav-pills .show>.nav-link,
+ .nav-pills .show>.nav-link
   {
     background-color: var(--dark-green);
     
@@ -150,7 +150,8 @@ footer {
 
 #webapplg .carousel-item.active,
 #edlg .carousel-item.active,
-#webstylelg .carousel-item.active {
+#webstylelg .carousel-item.active,
+#wheellg .carousel-item.active {
     overflow: hidden;
     max-height: 500px;
 }
