@@ -61,7 +61,7 @@ p {
 .right-align {
     text-align: right;
     margin-right: 10px;
-    margin-top: 10px;
+    
 }
 
 .left-align {
@@ -88,6 +88,16 @@ a:hover {
     padding-right: 5%;
     padding-bottom: 2%;
 }
+
+/* Dividers */
+.wave-container {
+    background-color: var(--light-bg);
+    
+  }
+  .wave-container > svg {
+    display: block;
+  }
+
 
 /* navigation */
 
@@ -123,7 +133,7 @@ footer {
 
 
 footer {
-    margin-top: 10px;
+    margin-top: none;
     height: 40px;
 }
 
@@ -138,7 +148,9 @@ footer {
     max-height: 250px;
 }
 
-#webapplg .carousel-item.active {
+#webapplg .carousel-item.active,
+#edlg .carousel-item.active,
+#webstylelg .carousel-item.active {
     overflow: hidden;
     max-height: 500px;
 }
