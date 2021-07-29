@@ -21,6 +21,10 @@
     --light-bg: #cce3de;
     --light-head: #f6fff8;
 
+ 
+    --light-tree: #98BD9C;
+    --dark-tree: #2C6D35;
+
 
     /* Current Scheme */
     --btn: var(--dark-green);  
@@ -123,16 +127,48 @@ a:hover {
 
 /* hero */
 
-.hero-text {
+.jumbotron {
+    color: white;
+    background-image: url("../img/unsplash-trees.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+.hero {
+    position:absolute;
+    top : 35%;
+    left: 20%;
+}
+.hero-text,
+.lead {
     font-family: var(--fancy-font);
+    color: var(--light-text);
+    
+}
+.hero-text {
+    font-size: 4rem;
+}
+.lead {
+    font-size: 2rem;
 }
 
-.hero {
-    background-color: var(--light-head);
-    
-    
+.hero-subtext {
+    font-family: var(--basic-font);
+    color: var(--light-text);
+
+}
+
+.scroll-info {
+    color: white;
+    position:absolute;
+    top : 87%;
+    left: 40%;
+    font-size: 1.5rem;
     
 }
+
+
 
 .small-svg {
     height: 30px;
