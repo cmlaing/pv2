@@ -17,8 +17,8 @@
     --dark-green: #577568;
     --light-text: #F6F3F6;
     --dark-text: #18251e;
-    --dark-alt: #513d51;
-    --light-bg: #cce3deff;
+    --dark-alt: hsl(300, 14%, 28%);
+    --light-bg: #cce3de;
     --light-head: #f6fff8;
 
 
@@ -26,6 +26,7 @@
     --btn: var(--dark-green);  
 
     --fancy-font: 'Cinzel Decorative', cursive;
+    --sub-font: 'Oxygen', sans-serif;
     --basic-font: 'Open Sans', sans-serif;
 
  
@@ -89,6 +90,10 @@ a:hover {
     padding-bottom: 2%;
 }
 
+.subfont {
+    font-family: var(--sub-font);
+}
+
 /* Dividers */
 .wave-container {
     background-color: var(--light-bg);
@@ -123,13 +128,24 @@ a:hover {
 }
 
 .hero {
+    background-color: var(--light-head);
     
+    
+    
+}
+
+.small-svg {
+    height: 30px;
+}
+.innerhero {
+    /* background-image: url("../pattern.svg"); */
+    background: var(--light-head);
 }
 
 
 
 /* nav/footer and just footer */
-
+header,
 .nav,
 footer {
     background-color: var(--light-head);
@@ -161,6 +177,16 @@ footer {
 }
 .maincard {
     height: 450px;
+}
+
+.card-body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-y:scroll; 
+}
+
+.card-img {
+    max-height: 270px;
 }
 
 .small-card {
