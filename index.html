@@ -19,9 +19,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <!--Oxygen -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/test.css">
 
 
-  <link rel="stylesheet" href="css/styles.css">
 
 
     
@@ -30,47 +35,85 @@
 <body>
 
 
-  <header>
+ <header>
+ 
 
-    <!-- Nav Bar-->
+
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center fixed-top py-2 mb-3 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+       
+        <!--placeholder SVG for now-->
+        <svg xmlns="http://www.w3.org/2000/svg" class="bi me-2" width="40" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+        </svg>
+        
+        <span class="fs-4">Crystal Laing</span>
+      </a>
   
-    <nav class="nav nav-pills justify-content-end fixed-top">
-      <a class="nav-link" href="#">Home</a>
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#aboutme">About Me</a>
-      <a class="nav-link" href="#skills">Skills</a>
-      <a class="nav-link" href="#blog">Blog</a>
-      <a class="nav-link" href="#contact">Contact</a>
-              <a class="nav-link" href="#">
-              <button type="button" class="btn-custom btn-primary btn-sm px-4 me-md-2">Resume</button></a>
+      <ul class="nav nav-pills">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#aboutme">About Me</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#blog">Blog</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </ul>
+    </header>
+  </div>
+
+
+</header>
+
+
+
   
-  
-    </nav>
-  
-  </header>
-
-
-
-
 <!-- Hero -->
-        <div class="container col-xxl-8 px-4 py-5 hero">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-              <div class="col-10 col-sm-8 col-lg-6">
-                <img src="ref/flower-placeholder2.jpeg" class="maximg d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-              </div>
-              <div class="col-lg-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3 hero-text">Hi, my name is Crystal.</h1>
-                <p class="lead">Here is a catchy tagline about how I make websites.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                  <button type="button" class="btn-custom btn-primary btn-lg px-4 me-md-2">Resume</button>
-                  
-                <a href="#contact">
-                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact</button>
-                </a>
-                </div>
-              </div>
-            </div>
-          </div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="hero">
+    <h1 class="display-5 fw-bold lh-1 mb-3 hero-text">
+      <span style="font-size: 5rem;">Hi,</span><br>
+      my name is Crystal.</h1>
+    <p class="lead">I am a front-end web developer and designer.</p>
+    </div>
+
+    <div class="center scroll-info">
+      <p class="hero-subtext">Scroll to learn more</p>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 small-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="container col-xxl-8 px-4 py-5 hero">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="ref/flower-placeholder2.jpeg" class="maximg d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold lh-1 mb-3 hero-text">Hi, my name is Crystal.</h1>
+      <p class="lead">I am a front-end web developer and designer.</p>
+      <p>
+
+
+      </p>
+      </div>
+    </div>
+    <div class="center">
+    <p>Scroll to learn more</p>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 small-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+    </div>
+  </div> -->
+
 
 
 
@@ -79,50 +122,15 @@
 <!--Project Cards -->
 <!-- todo universal height for each project despite image height-->
 
-<div id="projects"><h1 class="text-center pb-4">Projects</h1></div>
+<div id="projects"><h1 class="text-center pb-4 subfont mt-5 pt-5">Projects</h1></div>
           <div class="row row-cols-1 row-cols-md-2 g-4">
 
      <!-- Card 1-->
      <div class="col">
      <div class="card maincard" data-sal="slide-right">
-        <!--Slideshow-->
-        <div id="webapp" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              
-              <div class="carousel-item active">
-                <img src="img/webapp/mockup_webapp.jpg" class="d-block w-100" alt="WebApp Example">
+      <div class="card-body">
+      <img src="img/webapp/mockup_webapp.jpg" class="d-block w-100 card-img" alt="WebApp Example">
                 
-              </div>
-    
-              <div class="carousel-item">
-                <img src="img/webapp/webapp.png" class="d-block w-100" alt="Full Screen">
-              </div>
-    
-              <div class="carousel-item">
-                <img src="img/webapp/webapp2.png" class="d-block w-100" alt="Lower down screen">
-              </div>
-    
-              <div class="carousel-item">
-                <img src="img/webapp/webapp3.png" class="d-block w-100" alt="Bottom screen">
-              </div>
-            
-    
-              <div class="carousel-item">
-                <img src="img/webapp/mobmockup2.jpg" class="d-block w-100" alt="Mobile View">
-              </div>
-            
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#webapp" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#webapp" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-            <!--End Slideshow-->
-                <div class="card-body">
                   <h5 class="card-title">WebApp</h5>
                   <p class="card-text">
                     <p>
@@ -133,39 +141,17 @@
                       <a href="webapp.html">Click here to view more!</a>
                     </p>
 
-                  </p>
+                    </p>
                 </div>
-              </div>
-            </div>
+      </div>
+      </div>
 
       <!-- Card 2-->
       <div class="col">
         <div class="card maincard" data-sal="slide-left">
-          <!--Slideshow-->
-          <div id="ed" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/emdir/ed.png" class="d-block w-100" alt="Full Screen">
-              </div>
-              <div class="carousel-item">
-                <img src="img/emdir/ed-modal.png" class="d-block w-100" alt="Modal Window">
-              </div>
-              <div class="carousel-item">
-                <img src="img/emdir/ed-search.png" class="d-block w-100" alt="Search Feature">
-              </div>
-
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#ed" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#ed" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        <!--End Slideshow-->
-          <div class="card-body">
+         <div class="card-body">
+         <img src="img/emdir/mockup_ed.jpg" class="d-block w-100 card-img" alt="Employee Directory">
+        
             <h5 class="card-title">Employee Directory</h5>
             <p class="card-text">
               <p>
@@ -179,30 +165,10 @@
         </div>
       </div>
              <!-- Card 3-->
-            <div class="col">
+             <div class="col">
               <div class="card maincard" data-sal="slide-right">
-                <!--Slideshow-->
-                <div id="webstyle" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="img/webguide/webguide-top.png" class="d-block w-100" alt="web style">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/webguide/webguide-bottom.png" class="d-block w-100" alt="web style">
-                    </div>
-
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#webstyle" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#webstyle" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              <!--End Slideshow-->
-                <div class="card-body">
+               <div class="card-body">
+               <img src="img/webguide/mockup_webstyle.jpg" class="d-block w-100 card-img" alt="Web Style Guide Example">
                   <h5 class="card-title">Web Style Guide</h5>
                   <p class="card-text">
                     
@@ -217,29 +183,10 @@
               </div>
             </div>
              <!-- Card 4-->
-            <div class="col">
+             <div class="col">
               <div class="card maincard" data-sal="slide-left">
-                <!--Slideshow-->
-                <div id="wheelgame" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="img/wheelgame/wheel.png" class="d-block w-100" alt="Game">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="img/wheelgame/mockup-wheel.jpg" class="d-block w-100" alt="Mockup Game">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#wheelgame" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#wheelgame" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              <!--End Slideshow-->
-                <div class="card-body">
+               <div class="card-body">
+               <img src="img/wheelgame/mockup-wheel.jpg" class="d-block w-100 card-img" alt="Game Example">
                   <h5 class="card-title">Word Guessing Game</h5>
                   <p class="card-text">
                     
@@ -254,12 +201,16 @@
             </div>
           </div>
 
+<div><h1 class="text-center pb-4 mt-4 subfont">Learn more...</h1></div>
 
   <!--About Me-->
 <div class="row" id="aboutme">
   <div class="col-sm-6 gy-4">
     <div class="card small-card">
       <div class="card-body">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 small-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        </svg>
         <h5 class="card-title">About Me</h5>
         <p class="card-text">
           <p>Hello, my name is Crystal!</p>
@@ -281,6 +232,11 @@
   <div class="col-sm-6 gy-4" id="skills">
     <div class="card small-card">
       <div class="card-body">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 small-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+        </svg>
         <h5 class="card-title">Skills/Education</h5>
         <p class="card-text">
           <p>
@@ -320,15 +276,22 @@
   <div class="col-sm-6 gy-4">
     <div class="card small-card">
       <div class="card-body">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 small-svg" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
+        </svg>
         <h5 class="card-title">Creativity</h5>
         <p class="card-text">
           <p>
           Curious about how I approach problems when programming? 
-          Check out my blog to find out how I approached a project during my Tech 
-          Degree. <br> <br>
-          <a href="https://coda.io/@crystal-laing/about-me/my-learning-blog-2" 
+          Check out my blog to find out how I approach problems when programming and 
+          other various thoughts on topics:  <br> <br>
+          <a href="https://crystal.hashnode.dev/" 
           class="btn btn-primary btn-custom">Blog</a>
           </p>
+          An older example from a Tech Degree project: <br>
+          <a href="https://coda.io/@crystal-laing/about-me/my-learning-blog-2" 
+          class="btn btn-primary btn-custom">Example from Coda</a>
+          
           <p>
             I have also created a few smaller things in my spare time including a 
             text-based Tic Tac Toe game, a 2D collecting game (similar to Snake), 
@@ -346,6 +309,9 @@
   <div class="col-sm-6 gy-4" id="contact">
     <div class="card small-card">
       <div class="card-body">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 small-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+        </svg>
         <h5 class="card-title">Contact</h5>
         <p class="card-text">
           
@@ -383,5 +349,8 @@
 <script src="js/app.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+
+
 </body>
 </html>
