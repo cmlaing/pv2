@@ -199,10 +199,7 @@ footer {
     background-color: var(--light-head);
 }
 
-.carousel-item {
-    overflow: hidden;
-    max-height: 250px;
-}
+
 
 #webapplg .carousel-item.active,
 #edlg .carousel-item.active,
@@ -211,14 +208,24 @@ footer {
     overflow: hidden;
     max-height: 500px;
 }
+
+#projects:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.card {
+    
+}
 .maincard {
-    height: 450px;
+    height: 480px;
 }
 
 .card-body {
     overflow: hidden;
     text-overflow: ellipsis;
-    overflow-y:scroll; 
+    
 }
 
 .card-img {
@@ -226,7 +233,8 @@ footer {
 }
 
 .small-card {
-    height: 300px;
+    height: 400px;
+    overflow: hidden;
 }
 
 

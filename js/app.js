@@ -23,6 +23,9 @@ sal();
 var project1carousel = document.querySelector('#project1')
 var carousel = new bootstrap.Carousel(project1carousel)
 
+
+/* jumbotron stuff */
+
 $(".jumbotron").css({ height: $(window).height() + "px" });
 
 $(window).on("resize", function() {
