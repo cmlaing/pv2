@@ -77,6 +77,10 @@ p {
     text-align: center;
 }
 
+.thumbnail {
+    height: 300px;
+}
+
 a {
     color: var(--dark-alt);
 }

@@ -55,8 +55,11 @@
         <div class="card-body project-desc">
           <h5 class="card-title pt-3">A Fun, Word-Guessing Game</h5>
           <p class="card-text pt-3">
+            <h2>The Project</h2>
+
             <p>
-              This is a word-guessing game built primarily with JavaScript.
+              This is a word-guessing game built primarily with JavaScript. It is a mix 
+              between Wheel of Fortune and Hangman. 
             </p>
             
             <p>
@@ -74,13 +77,81 @@
                 on the keyboard as to not repeat already guessed letters. Different overlays 
                 for a win or lose situation appear with the option to play again. 
             </p>
+            <h2>The Approach</h2>
 
             <p>
-                This project was quite heavy on JavaScript. It allowed me to further my skills 
-                in manipulating arrays, functions, and event listeners. 
+              The point of the game is to guess a phrase, so I made up some phrases and 
+              put them into an array. I then created a function that randomly chose 
+              one of the phrases from that array list. Once chosen, I needed to display 
+              the phrase so I created another function just for that. This one used 
+              a "for loop" that took each character and turned it into a list item. 
+              Each item was changed to uppercase, so that it didn't matter how I 
+              originally wrote it in the phrase list. This was also so that it would 
+              match the input from the on screen keyboard. I had another conditional 
+              for nonletters (spaces) that added a "space" or "letter" class to the item. 
+            </p>
+            <p>
+              The next part was communicating between the code and the onscreen keyboard. 
+              I needed a function that checked if the letter chosen from the onscreen 
+              keyboard matched any letters in the phrase. I used another "for loop" 
+              in this function that added a "show" class to the item if it matched. 
+              Of course, this also meant I needed an event listener for the keyboard 
+              itself, so that was the next task I completed. Once the letter was 
+              clicked, the "chosen" class got assigned and the letter could no longer 
+              be clicked (it was disabled). In this event listener, I included another 
+              conditional for the heart token/lives. If the letter was not in the phrase, 
+              then a heart token would be taken away. I created a variable called "missed" 
+              and incremented it for each instance of a missed letter. The last part of 
+              this segment was to call another function, checkWin(), to see if that last 
+              letter choice was enough to win the game.
+            </p>
+            <p>
+              The checkWin() function used an "if/else" statement for a win or lose 
+              situation. The "win" situation meant a new overlay/screen would appear 
+              letting the user know they had won the game. I didn't like how 
+              boring it looked, so I added an old picture I took of some kittens 
+              in my dad's workboots. Since it was a fun, casual game I felt some 
+              kittens were appropriate to spruce it up a bit. There was also 
+              a "Play Again" button on the screen that refreshed the game to a new 
+              phrase and full heart tokens. The "lose" situation was a different 
+              overlay with a "Play Again" button and a red background. 
             </p>
 
 
+            <h2>Things I Learned</h2>
+
+            <p>
+                This project was quite heavy on JavaScript. It allowed me to further my skills 
+                in manipulating arrays, loops, conditionals, functions, appendChild(), 
+                and event listeners. 
+
+                
+            </p>
+
+            <h2>Final Thoughts</h2>
+            <p>
+              It was fun to try to make an interactive game. When I first expressed a serious 
+              interest in programming, the first thing I did was look up how to make 
+              a game. (You can read more about that <a href="creative.html"> here if 
+              you are interested.
+              </a>) So when I saw that Treehouse was offering a game as one of the projects, 
+              I was quite intrigued! 
+            </p>
+            <p>
+              I liked that I was able to enhance my JavaScript skills. Going into this 
+              project, I felt like my skills were a bit on the weaker side and could 
+              really benefit from some extra practice. I wanted to practice more with 
+              functions and conditionals and that is exactly what I got done. I feel 
+              more confident in that area after completing this project. 
+            </p>
+            <p>
+              In the future, I would like to expand on this project. The title 
+              "Wheel of Success" is a bit misleading, as there is no wheel involved. I think 
+              with what I know with CSS and JavaScript, I might be able to create a spinning 
+              wheel with letters or symbols and have that link to a phrase or match 
+              another component. This project is inspiring for me to continue to learn in 
+              a new direction. 
+            </p>
 
             
             <p>
