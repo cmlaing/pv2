@@ -30,24 +30,31 @@
 <body>
 
 
-  <header>
 
-    <!-- Nav Bar-->
+
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center fixed-top py-2 mb-3 border-bottom">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+         
+          <!--placeholder SVG for now-->
+          <svg xmlns="http://www.w3.org/2000/svg" class="bi me-2" width="40" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+          </svg>
+          
+          <span class="fs-4">Crystal Laing</span>
+        </a>
+    
+        <ul class="nav nav-pills">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="index.html#projects">Projects</a>
+          <a class="nav-link" href="index.html#aboutme">About Me</a>
+          <a class="nav-link" href="index.html#contact">Contact</a>
+        </ul>
+      </header>
+    </div>
   
-    <nav class="nav nav-pills justify-content-end fixed-top">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="index.html#projects">Projects</a>
-      <a class="nav-link" href="index.html#aboutme">About Me</a>
-      <a class="nav-link" href="index.html#skills">Skills</a>
-      <a class="nav-link" href="index.html#blog">Blog</a>
-      <a class="nav-link" href="index.html#contact">Contact</a>
-              <a class="nav-link" href="#">
-              <button type="button" class="btn-custom btn-primary btn-sm px-4 me-md-2">Resume</button></a>
   
-  
-    </nav>
-  
-  </header>
+
 <div class="container pt-5">
 
     <div class="card mt-5">
@@ -117,13 +124,32 @@
               overlay with a "Play Again" button and a red background. 
             </p>
 
-
+            <!-- todo this part is too short, seems like i learned nothing-->
             <h2>Things I Learned</h2>
 
             <p>
                 This project was quite heavy on JavaScript. It allowed me to further my skills 
-                in manipulating arrays, loops, conditionals, functions, appendChild(), 
-                and event listeners. 
+                in manipulating arrays, loops, conditionals, functions, appending nodes, 
+                and event listeners. Aside from the obvious practice of using JavaScript 
+                more in general, the logical approach for how to solve the "problem" of 
+                making a game was a great learning experience. I had some guidance 
+                in figuring out what kinds of functions I needed to make, but actually 
+                making the functions and having them all connect together the way I wanted 
+                was a critical aspect of my understanding of JavaScript.  
+            </p>
+            <p>
+                I felt like after this project, I am much more comfortable with 
+                event listeners, loops, and conditionals because of how much I used 
+                them. Prior to going into this, I was familiar with working with arrays 
+                so that was a strong point that stayed consistant throughout the project. 
+                I was able to practice appending nodes with the appendChild() built-in 
+                function. I used this with the phrase when checking if the 
+                character was a letter or a space. After the check, it was appended 
+                to a list in order to then be displayed on the screen. Understanding 
+                the DOM tree was a new concept that got put into action with this 
+                project. I used it again on the "win" overlay screen by appending 
+                a photo of some kittens to the overlay, so I feel more comfortable 
+                knowing when it is a good time to use this tool. 
 
                 
             </p>
