@@ -220,12 +220,12 @@ footer {
     clear: both;
   }
 
-.card {
-    
-}
+
 .maincard {
-    height: 480px;
+    height: 350px;
 }
+
+
 
 .card-body {
     overflow: hidden;
@@ -234,11 +234,12 @@ footer {
 }
 
 .card-img {
-    max-height: 270px;
+    max-height: 300px;
 }
 
 .small-card {
     height: 400px;
+    width: 100%;
     overflow: hidden;
 }
 

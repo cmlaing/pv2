@@ -1,0 +1,183 @@
+
+/*
+------------------------------------------------------------
+
+TRU COMP 1131
+Crystal Laing 
+February 2017
+Assignment 4, Question 2.
+Cards.java
+
+This program deals 5 cards at random and prints the 
+card value as a word (i.e. 2 as "Two") with the suit value
+(e.g. "Of Hearts") in one line (e.g. "Two of Hearts")
+------------------------------------------------------------
+*/
+
+
+import java.util.Random;
+
+class Cards {
+
+private int suit;
+private int faceValue;
+private int cardFace;
+private int suitFace;
+
+
+// declare signature for Cards class using 2 parameters
+public Cards (int suit, int faceValue){
+        setSuit(suit);
+        setfaceValue(faceValue);
+        
+    }
+
+ String getfaceValue () {
+	 
+	 // starts off with nothing because it relies on faceValue to start
+	 String cardFace = null;
+    
+    // face values into strings for 1-10 plus Jack, Queen, King
+    if (faceValue == 1) {
+         cardFace ="Ace";
+    } else if (faceValue == 2) {
+    	cardFace = "Two";
+    } else if (faceValue == 3) {
+    	cardFace ="Three";
+    } else if (faceValue == 4) {
+    	cardFace ="Four";
+    } else if (faceValue == 5) {
+    	cardFace ="Five";
+    } else if (faceValue == 6) {
+    	cardFace ="Six";
+    } else if (faceValue == 7) {
+    	cardFace ="Seven";
+    } else if (faceValue == 8) {
+    	cardFace ="Eight";
+    } else if (faceValue == 9) {
+    	cardFace ="Nine";
+    } else if (faceValue == 10) {
+    	cardFace  = "Ten";
+    } else if (faceValue == 11) {
+    	cardFace  = "Jack";
+    } else if (faceValue == 12) {
+    	cardFace = "Queen";
+    } else if (faceValue == 13) {
+    	cardFace = "King";
+    }
+
+
+        return cardFace;
+    }
+
+void setfaceValue (int faceValue) {
+    this.faceValue = faceValue;
+}
+
+String getSuit () {
+    
+    // Suit values into strings for Hearts,Spades,Clubs, Diamonds
+	
+	 String suitFace = null;
+    
+    if (suit == 1) {
+    	suitFace =" of Hearts";
+    } else if (suit == 2) {
+    	suitFace =" of Spades";
+    } else if (suit == 3) {
+    	suitFace =" of Clubs";
+    } else if (suit == 4) {
+    	suitFace =" of Diamonds";
+    }
+        return suitFace;
+    }
+
+void setSuit (int suit) {
+        this.suit = suit;
+ 
+    }
+
+public static void main (String[] args) {
+	
+	// random cards for each card object
+	
+	// card 1
+	Random randomSuit1 = new Random();
+	int  suitValue = randomSuit1.nextInt(4) + 1;
+	
+	Random randomFace1 = new Random();
+	int  faceValue = randomFace1.nextInt(13) + 1;
+	
+    Cards card1 = new Cards(suitValue, faceValue);
+    
+    // card 2
+	Random randomSuit2 = new Random();
+	int  suitValue2 = randomSuit1.nextInt(4) + 1;
+	
+	Random randomFace2 = new Random();
+	int  faceValue2 = randomFace1.nextInt(13) + 1;  
+    
+    Cards card2 = new Cards(suitValue2, faceValue2);
+    
+    
+    // card 3
+	Random randomSuit3 = new Random();
+	int  suitValue3 = randomSuit3.nextInt(4) + 1;
+	
+	Random randomFace3 = new Random();
+	int  faceValue3 = randomFace3.nextInt(13) + 1;
+    Cards card3 = new Cards(suitValue3, faceValue3);
+    
+    // card 4
+	Random randomSuit4 = new Random();
+	int  suitValue4 = randomSuit4.nextInt(4) + 1;
+	
+	Random randomFace4 = new Random();
+	int  faceValue4 = randomFace4.nextInt(13) + 1;
+
+    
+    Cards card4 = new Cards(suitValue4, faceValue4);
+    
+    // card 5
+	Random randomSuit5 = new Random();
+	int  suitValue5 = randomSuit5.nextInt(4) + 1;
+	
+	Random randomFace5 = new Random();
+	int  faceValue5 = randomFace5.nextInt(13) + 1;
+  
+    Cards card5 = new Cards(suitValue5, faceValue5);
+
+    
+    
+    // print out the card value and suit in words
+    System.out.print(card1.getfaceValue());
+    System.out.print(card1.getSuit());
+    
+    // makes the next card start on a new line
+    System.out.println("");
+    
+    System.out.print(card2.getfaceValue());
+    System.out.print(card2.getSuit());
+    
+    System.out.println("");
+    
+    System.out.print(card3.getfaceValue());
+    System.out.print(card3.getSuit());
+    
+    System.out.println("");
+    System.out.print(card4.getfaceValue());
+    System.out.print(card4.getSuit());
+    
+    System.out.println("");
+    System.out.print(card5.getfaceValue());
+    System.out.print(card5.getSuit());
+    
+
+    
+
+    
+
+}
+}
+
+

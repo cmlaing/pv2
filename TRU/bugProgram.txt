@@ -1,0 +1,124 @@
+/*
+------------------------------------------------------------
+
+TRU COMP 1131
+Crystal Laing 
+January 2017
+Assignment 4, Question 1.
+BugProgram.java
+
+This program features three bugs: an ant, fly, and a bee. Each bug lands on the wire at a different initial position.
+The ant goes onto the wire and moves towards the right.
+The fly goes onto the wire and moves to the left.
+The bee goes onto the wire and moves to the right until it reaches the wall and then it reverses direction.
+------------------------------------------------------------
+*/
+public class BugProgram {
+
+   	 public static class Bug
+   	 {
+   		 // declare public variables for all bugs
+   		 int startPosition;
+   		 int i;
+   		 
+   		 // method for moving right one unit at a time
+   		 public int moveRight(int startPosition){
+   			 
+   			 i = startPosition + 1;
+   			 return i;
+   		 }
+   		 // method for moving left one unit at a time
+   		 public int moveLeft(int startPosition){
+   			 
+   			 i = startPosition - 1;
+   			 return i;
+   		 }    
+
+   		 
+
+
+
+   	 }
+   	 
+    
+
+public static void main(String[] args) {
+   		 
+   		 int startPosition;
+   		 // declare Bug objects from the Bug class
+   		 Bug ant = new Bug();
+   		 Bug fly = new Bug();
+   		 Bug bee = new Bug();
+   		 
+   		 // declare each bug's starting position
+   		 int antPosition = 2;
+   		 System.out.println("The ant's starting position:" + antPosition);
+   		 int flyPosition = -1;
+   		 System.out.println("The fly's starting position:" + flyPosition);
+   		 int beePosition = 1;
+   		 System.out.println("The bee's starting position:" + beePosition);
+   		 
+   		 // the ant's movement going to the right
+   		 for (int i = antPosition; i <= 9; i++)
+   		 {
+   			 antPosition = ant.moveRight(i);
+   			 System.out.println("Position of the ant: " + antPosition);
+
+   		 
+   		 }
+   		 
+   		 // the fly's movement going to the left
+   		 for (int i = flyPosition; i >= -9; i--)
+   		 {
+   			 flyPosition = fly.moveLeft(i);
+   			 System.out.println("Position of the fly: " + flyPosition);
+   		 
+   		 }
+   		 
+   		 // the bee's movement going to the right and then turning around
+   		 for (int i = beePosition; i <= 8; i++)
+   		 {
+   			 // goes to the right
+   			 if (beePosition < 9 )
+   				 {
+   					 if (beePosition > 0){
+   					 beePosition = bee.moveRight(i);
+   					 System.out.println("Position of the bee moving right: " + beePosition);
+   					 }
+   		 
+   				 }
+   			 // stops at position 9
+   			 if  (beePosition == 9)
+   				 {
+   			 
+   				 
+   					 System.out.println("Bee reached the end of the wall and turns around.");
+    
+   				 
+   					 if (beePosition > 0)
+   					 {
+   						 
+   						 
+   						 
+   						 
+   						 // bee goes backwards until it reaches position 0
+   						 while (beePosition <= 9 && beePosition > 2)
+   						 
+   						 {
+   							 beePosition = beePosition -1;
+   							 System.out.println("Bee starts to go backwards: " + beePosition);
+   						 
+   							 
+   						 }
+   					 }
+   				 
+   			 }
+
+   		 
+   		 }
+
+
+   		 
+   	 }
+
+}

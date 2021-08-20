@@ -1,0 +1,35 @@
+
+int ledPin = 5;                    
+int inputPin = 2;                  
+int pinSpeaker = 6;                  
+int val = 0;                
+
+            
+void setup() 
+{
+  
+  pinMode(ledPin, OUTPUT);     
+  pinMode(inputPin, INPUT);    
+  pinMode(pinSpeaker, OUTPUT);
+}
+
+
+void loop() 
+  {
+  val = digitalRead(inputPin);
+                                
+
+  
+  if (val == HIGH) 
+    {
+    digitalWrite(ledPin, HIGH);  
+    tone(pinSpeaker, 160, 300); 
+    delay(150);                 
+    } 
+  
+  else          
+  {
+      digitalWrite(ledPin, LOW); 
+      delay(300);                
+  }
+}

@@ -1,0 +1,66 @@
+// Crystal Laing COMP 1231
+// AverageExceptionExample.java shows an exception code and how it gets handled
+// May 2017
+
+import java.util.Scanner;
+
+public class AverageExceptionExample {
+
+	private int[] userValues;
+	private double average;
+	
+	
+	
+	public static void main(String[] args) {
+		
+		int[] userValues = new int [10];
+		String enteredValue;
+		int intValue = 0;
+		int count = 0;
+		int sum = 0;
+		int average = 0;
+		
+		Scanner scan = new Scanner(System.in);
+		
+	
+
+		
+		while (count < 10)
+		{
+			System.out.println("Enter a numeric value.");
+			enteredValue = scan.nextLine();
+			try
+			{
+				
+				intValue = Integer.parseInt(enteredValue);
+				for (int index = count; index < 10; index++)
+				userValues[index] = intValue;
+				
+				count++;
+			}
+			catch (NumberFormatException exception)
+			{
+				System.out.println("Value is not numeric. Value entered: " + enteredValue);
+			}
+			
+		
+		
+		}
+		
+		
+		
+		   // find the average
+	    for (int index = 0; index < 10; index++)
+	        sum = sum + userValues[index];
+	    	average = sum/10;
+	    System.out.println("The average is approximately: " + average);
+		
+	    // print array
+	    for (int i : userValues){
+	    	System.out.println(i);
+	    }
+	       
+
+	}
+
+}
