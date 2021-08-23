@@ -198,8 +198,7 @@ footer {
 
 .projects {
     background-color: white;
-    margin-left: 10px;
-    margin-right: 10px;
+
 }
 
 #projects {
@@ -220,19 +219,26 @@ card-left: image
 card-right: text description
 
 OR content reversed
+
+Each card with text content has items with classes: 
+1. card-title (heading)
+2. card-text (description)
+3. card-button (case study button)
 */
 
 .card {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     
     width: 98%;
+    height: 350px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     
 }
 
@@ -241,12 +247,36 @@ OR content reversed
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
+    height: 100%;
     width: calc(50% - 20px);
-    align-self: flex-start;
+    
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px;
     
 
 }
+
+.card-img {
+    max-height: 340px;
+}
+
+.card-title {
+    font-size: 1.75rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+    width: 80%;
+}
+
+.card-button {
+    justify-content: flex-end;
+}
+
+
 
 
 
@@ -279,15 +309,20 @@ OR content reversed
     
 }
 
-.card-img {
-    max-height: 300px;
-}
+
 
 .small-card {
     height: 400px;
     width: 100%;
     overflow: hidden;
 }
+
+/****************************
+About Me and Contact Section
+
+***************************/
+
+
 
 
 /* list of skills */
