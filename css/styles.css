@@ -84,11 +84,14 @@ p {
 
 a {
     color: var(--dark-alt);
+    font-weight: 700;
+    font-style: bold;
 }
 
 a:hover {
     background-color: var(--light-head);
     color: var(--dark-alt);
+    font-style: italic;
 }
 
 
@@ -212,8 +215,8 @@ footer {
     justify-content: center;
 }
 
-/*
-Cards are flexboxes with 2 columns: card-left and card-right.
+/****************************************************************************
+Cards are flexboxes (cardmain) with 2 columns: card-left and card-right.
 Cards set up either as: 
 card-left: image
 card-right: text description
@@ -224,9 +227,9 @@ Each card with text content has items with classes:
 1. card-title (heading)
 2. card-text (description)
 3. card-button (case study button)
-*/
+*****************************************************************************/
 
-.card {
+.cardmain {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -239,6 +242,10 @@ Each card with text content has items with classes:
     margin-right: auto;
     margin-bottom: 10px;
     margin-top: 20px;
+
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    word-wrap: break-word;
     
 }
 
@@ -277,11 +284,6 @@ Each card with text content has items with classes:
 }
 
 
-
-
-
-
-
 #webapplg .carousel-item.active,
 #edlg .carousel-item.active,
 #webstylelg .carousel-item.active,
@@ -297,9 +299,6 @@ Each card with text content has items with classes:
   }
 
 
-.maincard {
-    height: 350px;
-}
 
 
 
@@ -317,10 +316,77 @@ Each card with text content has items with classes:
     overflow: hidden;
 }
 
-/****************************
+/*****************************************************************************
 About Me and Contact Section
 
-***************************/
+About Me contains flexbox (aboutme-card): 
+1. card-title (header)
+2. bio (description)
+****************************************************************************/
+
+
+.aboutme {
+    
+    
+    padding: none;
+    margin: none;
+}
+
+.aboutme-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+    padding-top: 15px;
+
+}
+
+
+
+
+/*************
+Contact contains flex items: 
+1. card-title (heading)
+2. contact-info (description)
+3. email address
+*************/
+.contact {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 10px;
+}
+
+.contact-info {
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 
 
@@ -373,6 +439,10 @@ ul.skills {
 #webapp {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.hireme {
+    float: right;
 }
 
 
