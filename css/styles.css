@@ -93,11 +93,7 @@ a:hover {
 
 
 
-.container {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 2%;
-}
+
 
 .subfont {
     font-family: var(--sub-font);
@@ -201,8 +197,58 @@ footer {
 /* projects */
 
 .projects {
-    background-color: var(--light-head);
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+
+#projects {
+    padding: none;
+    margin: none;
+}
+.project-flex {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+Cards are flexboxes with 2 columns: card-left and card-right.
+Cards set up either as: 
+card-left: image
+card-right: text description
+
+OR content reversed
+*/
+
+.card {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+.card-left,
+.card-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    width: calc(50% - 20px);
+    align-self: flex-start;
+    
+
+}
+
+
 
 
 
