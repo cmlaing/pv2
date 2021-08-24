@@ -163,6 +163,16 @@ a:hover {
 
 }
 
+.btn-hero {
+    width: 230px;
+    height: 80px;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px white;
+    
+}
+
 .scroll-info {
     color: white;
     position:absolute;
@@ -229,6 +239,19 @@ Each card with text content has items with classes:
 3. card-button (case study button)
 *****************************************************************************/
 
+#projects {
+    padding-bottom: 25px;
+}
+
+.projhead {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: var(--fancy-font);
+
+}
+
+
+
 .cardmain {
     display: flex;
     flex-flow: row wrap;
@@ -243,10 +266,15 @@ Each card with text content has items with classes:
     margin-bottom: 10px;
     margin-top: 20px;
 
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 1px solid rgba(87, 117, 104, 0.3);
+    box-shadow:2px 1px rgba(87, 117, 104, 0.3);
     border-radius: 0.25rem;
     word-wrap: break-word;
     
+}
+
+.cardmain:hover {
+    box-shadow:3px 3px rgba(125, 240, 190, 0.3);
 }
 
 .card-left,
@@ -259,7 +287,7 @@ Each card with text content has items with classes:
     
     align-items: center;
     justify-content: space-around;
-    padding: 2px;
+    padding: 5px;
     
 
 }
@@ -326,10 +354,14 @@ About Me contains flexbox (aboutme-card):
 
 
 .aboutme {
-    
-    
-    padding: none;
+    padding: 25px 0;
     margin: none;
+}
+
+.aboutmehead {
+    font-family: var(--fancy-font);
+    size: 1.5rem;
+    padding-bottom: 10px;
 }
 
 .aboutme-card {
@@ -347,12 +379,12 @@ About Me contains flexbox (aboutme-card):
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
-    width: 75%;
+    width: 50%;
     align-items: center;
     justify-content: center;
 
     font-size: 1.2rem;
-    padding-top: 15px;
+    padding-top: 25px;
 
 }
 
@@ -371,10 +403,8 @@ Contact contains flex items:
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+    width: 55%;
+    margin: 50px auto;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 10px;
 }
@@ -395,11 +425,11 @@ Contact contains flex items:
 
 
 ul.skills {
-    padding: 0;
+    
     text-align: center;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 15px;
   }
   
   .skills li {
@@ -456,6 +486,8 @@ Media Queries for Mobile and Tablet Views
 ========================================================================== 
 */
 
+/* todo card layouts */
+
 /* --------------------------- 768 and smaller screens */
 
 @media screen and (max-width: 1023px){
@@ -473,10 +505,11 @@ Media Queries for Mobile and Tablet Views
     top: auto;
     }
 
-/* col layout */
-
-#aboutme .row {
-    display: none;
+.cardmain,
+.card-left,
+.card-right {
+    max-width: 100vw;
+    flex-direction: column;
 }
 
 }
