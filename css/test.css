@@ -84,20 +84,19 @@ p {
 
 a {
     color: var(--dark-alt);
+    font-weight: 700;
+    font-style: bold;
 }
 
 a:hover {
     background-color: var(--light-head);
     color: var(--dark-alt);
+    font-style: italic;
 }
 
 
 
-.container {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 2%;
-}
+
 
 .subfont {
     font-family: var(--sub-font);
@@ -164,6 +163,16 @@ a:hover {
 
 }
 
+.btn-hero {
+    width: 230px;
+    height: 80px;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px white;
+    
+}
+
 .scroll-info {
     color: white;
     position:absolute;
@@ -193,6 +202,8 @@ footer {
 }
 
 
+
+
 footer {
     margin-top: none;
     height: 40px;
@@ -201,9 +212,106 @@ footer {
 /* projects */
 
 .projects {
-    background-color: var(--light-head);
+    background-color: white;
+
 }
 
+#projects {
+    padding: none;
+    margin: none;
+}
+.project-flex {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/****************************************************************************
+Cards are flexboxes (cardmain) with 2 columns: card-left and card-right.
+Cards set up either as: 
+card-left: image
+card-right: text description
+
+OR content reversed
+
+Each card with text content has items with classes: 
+1. card-title (heading)
+2. card-text (description)
+3. card-button (case study button)
+*****************************************************************************/
+
+#projects {
+    padding-bottom: 25px;
+}
+
+.projhead {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: var(--fancy-font);
+
+}
+
+
+
+.cardmain {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    
+    width: 98%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+    border: 1px solid rgba(87, 117, 104, 0.3);
+    box-shadow:2px 1px rgba(87, 117, 104, 0.3);
+    border-radius: 0.25rem;
+    word-wrap: break-word;
+    
+}
+
+.cardmain:hover {
+    box-shadow:3px 3px rgba(125, 240, 190, 0.3);
+}
+
+.card-left,
+.card-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: calc(50% - 20px);
+    
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    
+
+}
+
+.card-img {
+    max-height: 340px;
+}
+
+.card-title {
+    font-size: 1.75rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+    width: 80%;
+}
+
+.card-button {
+    justify-content: flex-end;
+}
 
 
 #webapplg .carousel-item.active,
@@ -221,9 +329,6 @@ footer {
   }
 
 
-.maincard {
-    height: 350px;
-}
 
 
 
@@ -233,9 +338,7 @@ footer {
     
 }
 
-.card-img {
-    max-height: 300px;
-}
+
 
 .small-card {
     height: 400px;
@@ -243,30 +346,110 @@ footer {
     overflow: hidden;
 }
 
+/*****************************************************************************
+About Me and Contact Section
+
+About Me contains flexbox (aboutme-card): 
+1. bio (left side)
+2. Skills (right side)
+
+****************************************************************************/
+
+
+.aboutme {
+    padding: 25px 0;
+    margin: none;
+}
+
+.aboutmehead {
+    font-family: var(--fancy-font);
+    size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.aboutme-card {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+}
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-top: 25px;
+
+}
+
+.skillscard {
+    width: 40%;
+
+}
 
 /* list of skills */
 
 
 ul.skills {
-    padding: 0;
+    
     text-align: center;
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 15px;
   }
   
   .skills li {
     border-radius: 6px;
+    border: 1px solid var(--dark-alt);
     display: inline-block;
-    background: var(--dark-alt);
-    color: white;
+    background: white;
+    color: var(--dark-green);
     padding: 5px 10px;
     margin: 2px;
   }
 
-.skills li:nth-child(odd) {
-    background: var(--dark-green);
-  }
+
+
+
+/*************
+Contact contains flex items: 
+1. card-title (heading)
+2. contact-info (description)
+3. email address
+*************/
+.contact {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    margin: 50px auto;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 10px;
+}
+
+.contact-info {
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
 
 
 /* SVG */
@@ -294,6 +477,10 @@ ul.skills {
     margin: 0 auto;
 }
 
+.hireme {
+    float: right;
+}
+
 
 
 
@@ -304,6 +491,8 @@ ul.skills {
 Media Queries for Mobile and Tablet Views
 ========================================================================== 
 */
+
+/* todo card layouts */
 
 /* --------------------------- 768 and smaller screens */
 
@@ -322,10 +511,11 @@ Media Queries for Mobile and Tablet Views
     top: auto;
     }
 
-/* col layout */
-
-#aboutme .row {
-    display: none;
+.cardmain,
+.card-left,
+.card-right {
+    max-width: 100vw;
+    flex-direction: column;
 }
 
 }
