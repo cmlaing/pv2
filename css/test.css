@@ -25,13 +25,14 @@
     --light-tree: #98BD9C;
     --dark-tree: #2C6D35;
 
+    /* new mockup */
+    --purple: rgb(102, 54, 209);
+    --dark-purple: rgb(65, 28, 134);
+    --light-hero-bg: rgb(243, 252, 248);
+    --light-teal-accent: rgb(170, 250, 277);
+    --btn: var(--purple);  
 
-    /* Current Scheme */
-    --btn: var(--dark-green);  
 
-    --fancy-font: 'Cinzel Decorative', cursive;
-    --sub-font: 'Oxygen', sans-serif;
-    --basic-font: 'Open Sans', sans-serif;
 
  
 
@@ -40,7 +41,7 @@
 
 body {
     background-color: var(--light-bg);
-    font-family: var(--basic-font);
+    
     
 }
 
@@ -91,16 +92,11 @@ a {
 a:hover {
     background-color: var(--light-head);
     color: var(--dark-alt);
-    font-style: italic;
+    
 }
 
 
 
-
-
-.subfont {
-    font-family: var(--sub-font);
-}
 
 /* Dividers */
 .wave-container {
@@ -132,36 +128,27 @@ a:hover {
 /* hero */
 
 .jumbotron {
-    color: white;
-    background-image: url("../img/unsplash-trees.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    
+    background-color: var(--light-hero-bg);
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
   }
 .hero {
     position:absolute;
-    top : 35%;
-    left: 20%;
-}
-.hero-text,
-.lead {
-    font-family: var(--fancy-font);
-    color: var(--light-text);
-    
-}
-.hero-text {
-    font-size: 4rem;
-}
-.lead {
-    font-size: 2rem;
+    top : 20%;
+    left: 10%;
 }
 
-.hero-subtext {
-    font-family: var(--basic-font);
-    color: var(--light-text);
-
+.name {
+    font-size: 3rem;
+    color: var(--light-tree);
 }
+.hero-desc {
+    font-size: 5rem;
+    color: var(--dark-text);
+}
+
+
 
 .btn-hero {
     width: 230px;
@@ -173,35 +160,19 @@ a:hover {
     
 }
 
-.scroll-info {
-    color: white;
-    position:absolute;
-    top : 87%;
-    left: 40%;
-    font-size: 1.5rem;
-    
-}
 
-
-
-.small-svg {
-    height: 30px;
-}
-.innerhero {
-    /* background-image: url("../pattern.svg"); */
-    background: var(--light-head);
-}
 
 
 
 /* nav/footer and just footer */
-header,
+.header {
+    background-color: var(--light-hero-bg);
+}
+
 .nav,
 footer {
     background-color: var(--light-head);
 }
-
-
 
 
 footer {
@@ -212,7 +183,8 @@ footer {
 /* projects */
 
 .projects {
-    background-color: white;
+    background-color: var(--dark-purple);
+    color: white;
 
 }
 
@@ -243,12 +215,15 @@ Each card with text content has items with classes:
 
 #projects {
     padding-bottom: 25px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .projhead {
     padding-top: 25px;
     padding-bottom: 25px;
-    font-family: var(--fancy-font);
+    color: white;
+    
 
 }
 
@@ -268,6 +243,7 @@ Each card with text content has items with classes:
     margin-bottom: 10px;
     margin-top: 20px;
 
+    background: var(--light-hero-bg);
     border: 1px solid rgba(87, 117, 104, 0.3);
     box-shadow:2px 1px rgba(87, 117, 104, 0.3);
     border-radius: 0.25rem;
@@ -300,6 +276,7 @@ Each card with text content has items with classes:
 
 .card-title {
     font-size: 1.75rem;
+    color: var(--dark-green);
 }
 
 .card-text {
@@ -362,7 +339,7 @@ About Me contains flexbox (aboutme-card):
 }
 
 .aboutmehead {
-    font-family: var(--fancy-font);
+    
     size: 1.5rem;
     padding-bottom: 10px;
 }
@@ -445,14 +422,13 @@ Contact contains flex items:
 }
 
 
-
-
-
-
-
-
-
 /* SVG */
+
+.logo-svg {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+}
 
   a.github {
     background-image: url(img/github.svg);
