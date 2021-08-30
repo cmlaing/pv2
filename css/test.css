@@ -30,7 +30,8 @@
     --dark-purple: rgb(65, 28, 134);
     --light-hero-bg: rgb(243, 252, 248);
     --light-teal-accent: rgb(170, 250, 277);
-    --btn: var(--purple);  
+    --btn-hero: var(--purple);  
+    --btn: var(--light-tree); 
 
 
 
@@ -157,6 +158,7 @@ a:hover {
     padding-top: 20px;
     font-size: 1.5rem;
     box-shadow: 2px 2px white;
+    background-color: var(--btn-hero);
     
 }
 
@@ -213,7 +215,8 @@ Each card with text content has items with classes:
 3. card-button (case study button)
 *****************************************************************************/
 
-#projects {
+#projects,
+.aboutme-container {
     padding-bottom: 25px;
     width: 85%;
     margin: 0 auto;
@@ -236,7 +239,7 @@ Each card with text content has items with classes:
     justify-content: center;
     align-items: center;
     
-    width: 98%;
+    width: 100%;
     height: 350px;
     margin-left: auto;
     margin-right: auto;
@@ -265,13 +268,14 @@ Each card with text content has items with classes:
     
     align-items: center;
     justify-content: space-around;
-    padding: 5px;
+    padding: 0;
     
 
 }
 
 .card-img {
     max-height: 340px;
+    
 }
 
 .card-title {
@@ -333,6 +337,7 @@ About Me contains flexbox (aboutme-card):
 ****************************************************************************/
 
 
+
 .aboutme {
     padding: 25px 0;
     margin: none;
@@ -347,7 +352,6 @@ About Me contains flexbox (aboutme-card):
 .aboutme-card {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -366,6 +370,7 @@ About Me contains flexbox (aboutme-card):
 }
 
 .skillscard {
+    padding-top: 25px;
     width: 40%;
 
 }
@@ -383,15 +388,48 @@ ul.skills {
   
   .skills li {
     border-radius: 6px;
-    border: 1px solid var(--dark-alt);
+    border: 1px solid var(--dark-purple);
     display: inline-block;
-    background: white;
+    background: var(--light-hero-bg);
     color: var(--dark-green);
-    padding: 5px 10px;
-    margin: 2px;
+    padding: 10px;
+    margin: 4px;
   }
 
+.blogcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 0.5rem;
+}
 
+.left-blogcard{
+    width: 40%;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-top: 25px;
+    
+}
+
+.right-blogcard {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.btn-blog {
+    width: 120px;
+    height: 40px;
+    font-size: 1rem;
+    
+    background-color: var(--dark-green);
+    color: var(--light-hero-bg);
+
+}
 
 
 /*************
@@ -401,12 +439,14 @@ Contact contains flex items:
 3. email address
 *************/
 .contact {
-    background-color: white;
+    background-color: var(--purple);
+    color: var(--light-hero-bg);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     width: 55%;
+    padding: 40px;
     margin: 50px auto;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 10px;
@@ -420,7 +460,18 @@ Contact contains flex items:
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.contact > h1 {
+    color: var(--light-hero-bg);
+}
 
+.btn-contact {
+    width: 200px;
+    height: 60px;
+    font-size: 1.5rem;
+    color: var(--light-hero-bg);
+    background-color: var(--light-tree);
+
+}
 
 /* SVG */
 
