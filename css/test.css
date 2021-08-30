@@ -30,6 +30,7 @@
     --dark-purple: rgb(65, 28, 134);
     --light-hero-bg: rgb(243, 252, 248);
     --light-teal-accent: rgb(170, 250, 277);
+    --green-btn: rgb(67, 149, 109);
     --btn-hero: var(--purple);  
     --btn: var(--light-tree); 
 
@@ -58,7 +59,7 @@ p {
 
 .btn-custom,
 .btn-custom:hover {
-    background-color: var(--btn);
+    background-color: var(--green-btn);
     border: 1px solid var(--dark-alt);
 }
 
@@ -97,7 +98,120 @@ a:hover {
 }
 
 
+/* Extra Styles */
 
+/* 
+circle design 
+source: https://codepen.io/carpenumidium/pen/qtnfJ
+*/
+
+.halftone {
+
+/*
+  size progressively decreasing 
+*/
+background-image:
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 85%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 80%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 75%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 70%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 65%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 60%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 55%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 50%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 45%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 40%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 35%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 30%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 25%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 20%,
+  transparent 0
+  );  
+
+/*
+change all other values when changing this.
+I suppose this'd be easier to do in Sass.
+*/
+background-size: 1em 1em;
+
+/*
+If you want a vertical pattern change to repeat-x, also remember to  switch the background-positions' values. Eg. "2em 0" becomes "0 2em".
+*/
+background-repeat: repeat-y;
+
+/*
+based on background-size value
+*/
+background-position:
+0 0, 
+1em 0, 
+2em 0, 
+3em 0, 
+4em 0, 
+5em 0, 
+6em 0,
+7em 0,
+8em 0,
+9em 0,
+10em 0,
+11em 0,
+12em 0,
+13em 0;
+}
 
 /* Dividers */
 .wave-container {
@@ -133,11 +247,24 @@ a:hover {
     background-color: var(--light-hero-bg);
     background-size: cover;
     height: 80vh;
+    position: relative;
   }
 .hero {
     position:absolute;
     top : 20%;
     left: 10%;
+}
+
+.halftone:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 10px;
+    height: 20px;
+    transform: rotate(45deg);
+    
+
 }
 
 .name {
@@ -292,6 +419,7 @@ Each card with text content has items with classes:
 
 .card-button {
     justify-content: flex-end;
+    background-color: var(--green-btn);
 }
 
 
@@ -425,8 +553,7 @@ ul.skills {
     width: 120px;
     height: 40px;
     font-size: 1rem;
-    
-    background-color: var(--dark-green);
+    background-color: var(--green-btn);
     color: var(--light-hero-bg);
 
 }
@@ -450,6 +577,7 @@ Contact contains flex items:
     margin: 50px auto;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 10px;
+    position: relative;
 }
 
 .contact-info {
@@ -469,7 +597,7 @@ Contact contains flex items:
     height: 60px;
     font-size: 1.5rem;
     color: var(--light-hero-bg);
-    background-color: var(--light-tree);
+    background-color: var(--green-btn);
 
 }
 
