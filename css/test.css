@@ -255,17 +255,7 @@ background-position:
     left: 10%;
 }
 
-.halftone:before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    width: 10px;
-    height: 20px;
-    transform: rotate(45deg);
-    
 
-}
 
 .name {
     font-size: 3rem;
@@ -565,6 +555,123 @@ Contact contains flex items:
 2. contact-info (description)
 3. email address
 *************/
+.contact-wrapper {
+    padding: 40px;
+    margin: 50px auto;
+
+}
+
+.contact:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -6rem;
+    left: -4rem;
+    width: 100%;
+    height: 40rem;
+    transform: rotate(45deg);
+    opacity: 0.2;
+    background-image:
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 85%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 80%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 75%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 70%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 65%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 60%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 55%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 50%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 45%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 40%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 35%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 30%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 25%,
+  transparent 0
+  ),
+radial-gradient(
+  circle,
+  var(--light-teal-accent) 20%,
+  transparent 0
+  );  
+    
+  background-size: 1em 1em;
+
+  /*
+  If you want a vertical pattern change to repeat-x, also remember to  switch the background-positions' values. Eg. "2em 0" becomes "0 2em".
+  */
+  background-repeat: repeat-y;
+  
+  /*
+  based on background-size value
+  */
+  background-position:
+  0 0, 
+  1em 0, 
+  2em 0, 
+  3em 0, 
+  4em 0, 
+  5em 0, 
+  6em 0,
+  7em 0,
+  8em 0,
+  9em 0,
+  10em 0,
+  11em 0,
+  12em 0,
+  13em 0;
+  }
+
+
+
 .contact {
     background-color: var(--purple);
     color: var(--light-hero-bg);
@@ -573,8 +680,7 @@ Contact contains flex items:
     flex-direction: column;
     justify-content: center;
     width: 55%;
-    padding: 40px;
-    margin: 50px auto;
+    overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 10px;
     position: relative;
