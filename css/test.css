@@ -516,32 +516,48 @@ Each card with text content has items with classes:
     box-shadow:2px 1px rgba(87, 117, 104, 0.3);
     border-radius: 0.25rem;
     word-wrap: break-word;
+
+    overflow: hidden;
     
 }
 
 .cardmain:hover {
-    box-shadow:3px 3px rgba(125, 240, 190, 0.3);
+    box-shadow:3px 3px var(--dark-green);
 }
 
-.card-left,
-.card-right {
+.card-img{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 30%;
+  align-items: stretch;
+  justify-content: left;
+  padding: 0;
+  
+  
+
+  
+
+}
+.card-desc {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
     width: calc(50% - 20px);
-    
     align-items: center;
-    justify-content: space-around;
+    justify-content: left;
     padding: 0;
     
 
 }
 
-.card-img {
-    max-height: 340px;
-    
+.projects .cardmain:nth-child(2n + 1){
+  flex-direction: row-reverse;
 }
+
+
 
 .card-title {
     font-size: 1.75rem;
@@ -615,29 +631,38 @@ About Me contains flexbox (aboutme-card):
     padding-bottom: 10px;
 }
 
+.sideproj {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .aboutme-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     
 }
 
 .bio {
     display: flex;
     flex-wrap: wrap;
-    width: 40%;
-    align-items: center;
-    justify-content: center;
+    width: 60%;
+    align-items: flex-start;
+    justify-content: flex-start;
     font-size: 1.2rem;
-    padding-top: 25px;
+    padding: 25px;
+    
 
 }
 
 .skillscard {
-    padding-top: 25px;
+    padding: 25px;
     width: 40%;
+    font-size: 1.2rem;
 
 }
 
@@ -665,12 +690,12 @@ ul.skills {
 .blogcard {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     padding-right: 0.5rem;
 }
 
 .left-blogcard{
-    width: 40%;
+    width: 50%;
     align-items: flex-start;
     justify-content: center;
     font-size: 1.2rem;
@@ -679,16 +704,17 @@ ul.skills {
 }
 
 .right-blogcard {
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 2rem;
     
     
 }
 
 .btn-blog {
-    width: 120px;
+    width: 150px;
     height: 40px;
     font-size: 1rem;
     background-color: var(--green-btn);
