@@ -501,7 +501,7 @@ Each card with text content has items with classes:
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
     width: 100%;
@@ -530,22 +530,27 @@ Each card with text content has items with classes:
   flex-direction: column;
   flex-wrap: wrap;
   height: 100%;
-  width: 30%;
+  width: 40%;
   align-items: stretch;
   justify-content: left;
   padding: 0;
-  
-  
-
+  overflow: hidden;
   
 
+  
+
+}
+
+.card-img img{
+  height: 100%;
+  width: auto;
 }
 .card-desc {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
-    width: calc(50% - 20px);
+    width: 60%;
     align-items: center;
     justify-content: left;
     padding: 0;
