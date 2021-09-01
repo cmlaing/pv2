@@ -1,3 +1,29 @@
+/* 
+
+circle design in hero and contact section, with adjustments
+source: https://codepen.io/carpenumidium/pen/qtnfJ
+*/
+
+/* todo
+
+Mobile Layout
+Tablet Layout
+Title formats
+fonts
+color (no blacks or whites)
+double check grid requirements
+subpage layout
+margin/padding of boxes
+paragraph line height and readability
+header transparency when scrolling down the page
+button sizing
+make tagline better
+proofread paragraphs
+link styles need adjusting to be clearer
+
+
+
+*/
 
 
 
@@ -100,118 +126,6 @@ a:hover {
 
 /* Extra Styles */
 
-/* 
-circle design 
-source: https://codepen.io/carpenumidium/pen/qtnfJ
-*/
-
-.halftone {
-
-/*
-  size progressively decreasing 
-*/
-background-image:
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 85%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 80%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 75%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 70%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 65%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 60%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 55%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 50%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 45%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 40%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 35%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 30%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 25%,
-  transparent 0
-  ),
-radial-gradient(
-  circle,
-  var(--light-teal-accent) 20%,
-  transparent 0
-  );  
-
-/*
-change all other values when changing this.
-I suppose this'd be easier to do in Sass.
-*/
-background-size: 1em 1em;
-
-/*
-If you want a vertical pattern change to repeat-x, also remember to  switch the background-positions' values. Eg. "2em 0" becomes "0 2em".
-*/
-background-repeat: repeat-y;
-
-/*
-based on background-size value
-*/
-background-position:
-0 0, 
-1em 0, 
-2em 0, 
-3em 0, 
-4em 0, 
-5em 0, 
-6em 0,
-7em 0,
-8em 0,
-9em 0,
-10em 0,
-11em 0,
-12em 0,
-13em 0;
-}
 
 /* Dividers */
 .wave-container {
@@ -226,9 +140,12 @@ background-position:
 /* navigation */
 
 .nav-pills .nav-link.active,
- .nav-pills .show>.nav-link
+ .nav-pills .show>.nav-link,
+ .nav-pills,
+ .nav-link,
+ .nav-link:hover
   {
-    background-color: var(--dark-green);
+    background-color: transparent;
     
 }
 
@@ -371,9 +288,6 @@ radial-gradient(
   }
 
 
-
-
-
 /* circle design in hero, top right */
 .jumbotron::after {
     content: " ";
@@ -513,15 +427,16 @@ radial-gradient(
 }
 
 
-
-
-
 /* nav/footer and just footer */
 .header {
     background-color: var(--light-hero-bg);
+    border-bottom: none;
 }
 
-.nav,
+nav,
+header {
+    border-bottom: none;
+}
 footer {
     background-color: var(--light-head);
 }
