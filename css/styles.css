@@ -81,11 +81,13 @@ p {
     color: var(--dark-green);
 }
 
-.btn-custom,
-.btn-custom:hover {
+a.btn-custom,
+a.btn-custom:hover {
     background-color: var(--dark-purple);
     border: 1px solid var(--dark-purple);
+    color: var(--light-text);
 }
+
 
 
 
@@ -425,13 +427,14 @@ radial-gradient(
 
 
 
-.btn-hero {
+a.btn-hero {
     width: 230px;
     height: 80px;
     margin-top: 30px;
     padding-top: 20px;
     font-size: 1.5rem;
     background-color: var(--btn-hero);
+    color: var(--light-text);
     
 }
 
@@ -730,7 +733,7 @@ ul.skills {
     
 }
 
-.btn-blog {
+a.btn-blog {
     width: 150px;
     height: 40px;
     font-size: 1rem;
@@ -929,6 +932,15 @@ radial-gradient(
   font-size: 1.2rem;
   color: var(--dark-text);
   line-height: 1.8;
+}
+
+.btn-demo {
+  background-color: var(--dark-purple);
+  color: var(--light-text);
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.6rem;
+  padding: 1rem;
 }
 
 .card-header {
