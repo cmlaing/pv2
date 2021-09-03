@@ -581,7 +581,7 @@ Each card with text content has items with classes:
 .card-text {
     font-size: 1.2rem;
     line-height: 1.5rem;
-    width: 80%;
+    width: 90%;
 }
 
 .card-button {
