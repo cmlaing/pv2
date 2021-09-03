@@ -4,55 +4,28 @@
     <title> Crystal Laing, Front End Developer and Designer </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Normalize, Sal, Bootstrap, Sal-->
+    <!-- Normalize, Bootstrap, Sal-->
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="css/sal.css">
     
-    <!--Google Fonts and Custom-->
-    <!--Open Sans-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    
-    <!--Cinzel Decorative-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
-    <!--Oxygen -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/styles.css">
-
-
-
-
-    
 
 </head>
 <body>
 
-
- 
- 
-
-
   <div class="container">
-    <header class="d-flex flex-wrap justify-content-center fixed-top py-2 mb-3 border-bottom">
+    <header class="d-flex flex-wrap justify-content-center fixed-top py-2 mb-3">
       <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
        
         <!--placeholder SVG for now-->
-        <svg xmlns="http://www.w3.org/2000/svg" class="bi me-2" width="40" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-        </svg>
+        <img src="img/logo.svg" class="logo-svg" alt="logo">
         
-        <span class="fs-4">Crystal Laing</span>
+        <span class="fs-5">Crystal Laing</span>
       </a>
   
       <ul class="nav nav-pills">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="#projects">Projects</a>
         <a class="nav-link" href="#aboutme">About Me</a>
         <a class="nav-link" href="#contact">Contact</a>
@@ -61,128 +34,86 @@
   </div>
 
 
-
-
-
-
-  
 <!-- Hero -->
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <div class="hero">
-    <h1 class="display-5 fw-bold lh-1 mb-3 hero-text">
-      <span style="font-size: 5rem;">Hi,</span><br>
-      my name is Crystal.</h1>
-    <p class="lead">I am a front-end web developer and designer.</p>
-    
-    <p class="center">
-      
+      <h2 class="name">CRYSTAL LAING</h2>
+      <h1 class="hero-desc">
+        Front-End Web <br>
+        Developer and Designer
+      </h1>
+      <h4>Efficiency and hard work - always!</h4>
       <a href="#projects" 
-      class="btn btn-primary btn-custom btn-lg btn-hero">
-      
-      View My Projects
-
-    
-    </a>
- 
-
-    </p>
-    </div>
-
-    <!-- <div class="center scroll-info">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 small-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-      </svg>
-      </div> -->
-
+        class="btn btn-hero btn-primary btn-custom btn-lg">
+        View My Projects
+      </a>
     </div>
   </div>
+</div>
 
 
-
-
-<div class="projects">
 
 <!--Project Cards -->
-
-
-<div id="projects">
-  <h1 class="text-center projhead">Projects</h1>
+<div class="projects">
+  <div id="projects">
+    <h1 class="projhead"> Featured Projects</h1>
   
-  <div class="project-flex">
+    <div class="project-flex">
 
-     <!-- Card 1-->
+     <!-- Card 1 WebApp Project-->
 
       <div class="cardmain" data-sal="slide-right">
-        
-          <div class="card-left">
-            <img src="img/webapp/mockup_webapp.jpg" class="d-block w-100 card-img" alt="WebApp Example">
+          <div class="card-img">
+            <img src="img/webapp/mockup_webapp_new.jpg" class="d-block w-100" alt="WebApp Example">
           </div>
-
-
-          <div class="card-right">
-              <h5 class="card-title">WebApp</h5>
+          <div class="card-desc">
+              <h5 class="card-title">WebApp Dashboard</h5>
               <div class="card-text">
                 <p>
                A web application that uses chart widgets, local storage, user interaction, 
-               and CSS Grid - all in one place! This webpage was the first "from scratch" 
+               and CSS Grid - all in one place!</p>
+               <p>This webpage was the first "from scratch" 
                project I was able to work on. It was challenging at times, but it 
                came together looking great.
                 </p>
               </div>
               <div class="card-button">
                 <a href="webapp.html" 
-                class="btn btn-primary btn-custom">View Case Study</a>
+                class="btn btn-primary btn-custom">Read Case Study</a>
                   
               </div>
 
             </div>
           </div>
 
-
-
-
-
-
-
-      <!-- Card 2-->
+      <!-- Card 2 Employee Directory-->
       <div class="cardmain" data-sal="slide-left">
-        <div class="card-left">
+        <div class="card-img">
+          <img src="img/emdir/mockup_empdir_new.jpg" class="d-block w-100" alt="Employee Directory">
+        </div>
+        <div class="card-desc">
               <h5 class="card-title">Employee Directory</h5>
               <p class="card-text">
                 My first try at using JSON and a local API to display some information about 
                 employees. It is simple and functional - no frills, just results. 
               </p>
               <p class="card-text center">
-
                 <a href="emdir.html" 
                 class="btn btn-primary btn-custom">View Case Study</a>
               </p>
-
-            </div>
-
-
-          <div class="card-right">
-            <img src="img/emdir/mockup_ed.jpg" class="d-block w-100 card-img" alt="Employee Directory">
-          </div>
         </div>
 
-
-
-
-
-
-      <!-- Card 3-->
-
-    <div class="cardmain" data-sal="slide-right">
-     
-        <div class="card-left">
-          <img src="img/webguide/mockup_webstyle.jpg" class="d-block w-100 card-img" alt="Web Style Guide Example">
         </div>
-        <div class="card-right">
-          
+
+      <!-- Card 3 Web Style Guide-->
+
+      <div class="cardmain" data-sal="slide-right">
+        <div class="card-img">
+          <img src="img/webguide/mockup_webguide_new.jpg" class="d-block w-100" alt="Web Style Guide Example">
+        </div>
+        <div class="card-desc">
             <h5 class="card-title">Web Style Guide</h5>
             <p class="card-text">
               An web style guide using SASS. This project was to get used to using SASS and 
@@ -190,8 +121,6 @@
               approach really spoke to me and I will be using this technology much more 
               in the future when appropriate. 
             </p>
-
-
             <p class="card-text center">
               <a href="webguide.html" 
               class="btn btn-primary btn-custom">View Case Study</a>
@@ -199,14 +128,13 @@
           </div>
         </div>
 
-
-
-
-      <!-- Card 4-->
+      <!-- Card 4 Word Guessing Game-->
 
       <div class="cardmain" data-sal="slide-left">
-
-            <div class="card-left">
+        <div class="card-img">
+          <img src="img/wheelgame/mockup_wheelgame_new.jpg" class="d-block w-100" alt="Game Example">
+        </div>
+            <div class="card-desc">
               <h5 class="card-title">Word Guessing Game</h5>
               <p class="card-text">
                 A JavaScript based word guessing game that is similar to Hangman. Try the 
@@ -218,36 +146,8 @@
               </p>
             </div>
           
-          <div class="card-right">
-            <img src="img/wheelgame/mockup-wheel.jpg" class="d-block w-100 card-img" alt="Game Example">
-          </div>
-        </div>
 
-    <!--Card 5-->
-    <div class="cardmain" data-sal="slide-right">
-     
-      <div class="card-left">
-        <img src="img/extra/asciigame.jpg" class="d-block w-100 card-img" alt="ASCII Game">
       </div>
-      <div class="card-right">
-        
-          <h5 class="card-title">Side Projects/Game Development</h5>
-          <p class="card-text">
-            In my spare time, I have experimented with learning different things. My main 
-            side interest is learning C++ and game development. Although I am still very much 
-            a beginner, I have made a text-based tic tac toe game, ASCII-based adventure game, 
-            and a knock-off of Snake. 
-          </p>
-
-
-          <p class="card-text center">
-            <a href="creative.html" 
-            class="btn btn-primary btn-custom">View Side Projects</a>
-          </p>
-        </div>
-      </div>
-
-
     </div>
   </div>
 </div>
@@ -255,30 +155,42 @@
 <!--About Me and Contact-->
 
 <div id="aboutme" class="aboutme">
+  <div class="aboutme-container">
+      <!--Card 5 Side Projects and Game Development -->
+      <h1>Side Projects & Game Development</h1>
+      <div class="cardmain sideproj">
+     
+        <div class="card-img">
+          <img src="img/extra/asciigame.jpg" class="d-block w-100" alt="ASCII Game">
+        </div>
+        <div class="card-desc">
+            <p class="card-text">
+              In my spare time, I have experimented with learning different things. My main 
+              side interest is learning C++ and game development.
+              </p>
+              <p class="card-text">
+               Although I am still very much 
+              a beginner, I have made a text-based tic tac toe game, ASCII-based adventure game, 
+              and a knock-off of Snake. 
+            </p>
+            <p class="card-text center">
+              <a href="creative.html" 
+              class="btn btn-primary btn-custom">View Side Projects</a>
+            </p>
+          </div>
+        </div>
 
-<div class="aboutme-card">
-  <h1 class="center card-title aboutmehead">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 small-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-    </svg>
-    About Me
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 small-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path d="M12 14l9-5-9-5-9 5 9 5z" />
-      <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-    </svg>
-  </h1>
-
-  <div class="bio center">
+  <h1>About Me</h1>
+  <div class="aboutme-card">
+  <div class="bio">
     <p>
-      Hi, I'm Crystal. 
+      <strong>Hi, I'm Crystal.</strong> 
     </p>
     <p>
         I am a web developer and designer based on Vancouver Island, B.C. 
         I create websites that are functional, easy to use, and look great on 
         all screen sizes. Learning
-      </p>
-
+    </p>
     <p>
     I hold certifications in <strong>Front End Web Development</strong> 
     from <a href="https://teamtreehouse.com/" target="_blank"> Team TreeHouse</a>, 
@@ -290,6 +202,9 @@
     through <a href="https://literacyalberni.ca/wddep/" target="_blank"> 
     Literacy Alberni.</a>
     </p>
+  </div>
+
+  <div class="skillscard">
     <p>
       Some technologies I am familiar with include... 
     </p>
@@ -305,43 +220,53 @@
       <li>Bootstrap</li>
       <li>Coda</li>
     </ul>
-
-
-
-    <p>
-      Curious about how I approach problems when programming? 
-      Check out my blog to find out how I approach problems when programming and 
-      other various thoughts on topics:  <br> 
-      <a href="https://crystal.hashnode.dev/" 
-      class="btn btn-primary btn-custom">Blog</a>
-      </p>
+</div>
+</div>
+<h3>Curious about how I approach problems when programming? </h3>
+<div class="blogcard">
+  <div class="left-blogcard">
+  <p>
+    Check out my blog to find out! I discuss code snippets that I had trouble with, 
+    courses I have taken, lessons learned, and things to learn next!
+  </p>
   </div>
-
-
+  <div class="right-blogcard">
+  <a href="https://crystal.hashnode.dev/" 
+    class="btn btn-primary btn-custom btn-blog">
+    View My Blog
+  </a>
+  </div>
+</div>
 </div>
 
 
 
-</div>
 
 
 <!--Contact-->
+<div class="contact-wrapper">
 <div id="contact" class="contact center">
 
-  <h5 class="card-title">Contact Me</h5>
-  <div class="contact-info">Please email me if you have any questions or comments about my work.</div>
+  <h1>Let's Work Together</h1>
+  <div class="contact-info">
+    I am currently seeking remote full - or part - time employment as a front-end developer.
+  </div>
   <h4>
-    <a href="mailto: cistle@gmail.com">
-    cistle@gmail.com </a>
+    <a href="mailto: cistle@gmail.com"
+    class="btn btn-primary btn-custom btn-contact">
+    Get In Touch </a>
   </h4>
+
 </div>
-
-
+</div>
+</div>
+</div>
 
 <!--Wave Divider-->
 <div class="wave-container">
   <?xml version="1.0" standalone="no"?>
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 170" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(246, 255, 248, 1)" offset="0%"/><stop stop-color="rgba(246, 243, 246, 1)" offset="100%"/></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,119L48,107.7C96,96,192,74,288,68C384,62,480,74,576,90.7C672,108,768,130,864,133.2C960,136,1056,119,1152,93.5C1248,68,1344,34,1440,19.8C1536,6,1632,11,1728,22.7C1824,34,1920,51,2016,48.2C2112,45,2208,23,2304,28.3C2400,34,2496,68,2592,76.5C2688,85,2784,68,2880,53.8C2976,40,3072,28,3168,25.5C3264,23,3360,28,3456,48.2C3552,68,3648,102,3744,99.2C3840,96,3936,57,4032,42.5C4128,28,4224,40,4320,51C4416,62,4512,74,4608,87.8C4704,102,4800,119,4896,124.7C4992,130,5088,125,5184,107.7C5280,91,5376,62,5472,48.2C5568,34,5664,34,5760,48.2C5856,62,5952,91,6048,102C6144,113,6240,108,6336,110.5C6432,113,6528,125,6624,113.3C6720,102,6816,68,6864,51L6912,34L6912,170L6864,170C6816,170,6720,170,6624,170C6528,170,6432,170,6336,170C6240,170,6144,170,6048,170C5952,170,5856,170,5760,170C5664,170,5568,170,5472,170C5376,170,5280,170,5184,170C5088,170,4992,170,4896,170C4800,170,4704,170,4608,170C4512,170,4416,170,4320,170C4224,170,4128,170,4032,170C3936,170,3840,170,3744,170C3648,170,3552,170,3456,170C3360,170,3264,170,3168,170C3072,170,2976,170,2880,170C2784,170,2688,170,2592,170C2496,170,2400,170,2304,170C2208,170,2112,170,2016,170C1920,170,1824,170,1728,170C1632,170,1536,170,1440,170C1344,170,1248,170,1152,170C1056,170,960,170,864,170C768,170,672,170,576,170C480,170,384,170,288,170C192,170,96,170,48,170L0,170Z"/></svg>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#D0E2DD" fill-opacity="1" d="M0,160L80,170.7C160,181,320,203,480,176C640,149,800,75,960,64C1120,53,1280,107,1360,133.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
 
 </div>
 <footer>

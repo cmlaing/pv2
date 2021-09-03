@@ -31,3 +31,17 @@ $(".jumbotron").css({ height: $(window).height() + "px" });
 $(window).on("resize", function() {
   $(".jumbotron").css({ height: $(window).height() + "px" });
 });
+
+/* Change text color of navbar when on dark background */
+
+var navbar = document.querySelector('header');
+
+window.onscroll = function() {
+
+  // pageYOffset or scrollY
+  if (window.pageYOffset > 0) {
+    navbar.classList.add('scrolled')
+  } else {
+    navbar.classList.remove('scrolled')
+  }
+}
