@@ -161,11 +161,12 @@ a:visited {
 }
 
 
-
-header.scrolled {
-  color: var(--light-text);
-  background-color: blue;
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.8);
 }
+
+
+
 
 
 
