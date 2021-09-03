@@ -994,6 +994,8 @@ Media Queries for Mobile and Tablet Views
 .jumbotron::after,
 .contact::before{
     background-image: none;
+
+   
 }
 
 .jumbotron{
@@ -1040,13 +1042,27 @@ Media Queries for Mobile and Tablet Views
     flex-direction: column;
 }
 
+.contact-wrapper {
+  
+  padding: 0.2rem;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
     width: 90%;
     flex-shrink: 1;
+    padding: 0.5rem;
+    
+    min-width: 250px;
+
+}
 
 
+.contact-info {
+
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 
