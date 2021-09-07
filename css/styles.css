@@ -179,6 +179,7 @@ a:visited {
     height: 80vh;
     position: relative;
     overflow: hidden;
+    font-family: 'Work Sans', sans-serif;
     
  
   }
@@ -501,7 +502,7 @@ Each card with text content has items with classes:
 }
 
 .projhead {
-    padding-top: 25px;
+    padding-top: 50px;
     padding-bottom: 25px;
     color: white;
     
@@ -521,8 +522,9 @@ Each card with text content has items with classes:
     height: 350px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
 
     background: var(--light-hero-bg);
     border: 1px solid rgba(87, 117, 104, 0.3);
@@ -649,7 +651,7 @@ About Me contains flexbox (aboutme-card):
 .sideproj,
 .sideproj:hover {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -665,7 +667,13 @@ About Me contains flexbox (aboutme-card):
     padding-right: 0.5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-top: 2.5rem;
     
+}
+
+.aboutme-container > h1 {
+  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .bio {
@@ -915,6 +923,13 @@ radial-gradient(
     background-size: 30px 30px;
 }
 
+.logo-svg-large {
+  width: 10rem;
+  height: 10rem;
+  background-size: 10rem;
+
+}
+
   a.github {
     background-image: url(img/github.svg);
   }
@@ -931,6 +946,66 @@ radial-gradient(
 .project-desc {
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.the-project {
+  
+
+}
+
+.the-approach {
+  padding-bottom: 25px;
+  
+  margin: 0 auto;
+  
+}
+
+.things-learned {
+  
+}
+
+.flex-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  align-self: center;
+  width: 30%;
+  border: 1px red solid;
+}
+
+
+
+
+
+.final-thoughts {
+  
+}
+
+
+ul.skills-sub {
+    
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.skills-sub li {
+  border-radius: 6px;
+  border: 2px solid var(--dark-purple);
+  display: inline-block;
+  background: white;
+  color: var(--dark-green);
+  background-color: var(--light-tree);
+  padding: 10px;
+  margin: 4px;
 }
 
 .subcard {
