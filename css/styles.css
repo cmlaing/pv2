@@ -764,7 +764,8 @@ Contact contains flex items:
 
 }
 
-.contact:before {
+.contact:before,
+.contact-subpage:before {
     content: "";
     position: absolute;
     display: block;
@@ -890,6 +891,21 @@ radial-gradient(
     padding: 2rem;
 }
 
+.contact-subpage {
+  background-image: linear-gradient(to right, rgb(109, 40, 217), rgb(109, 40, 217), rgb(79, 70, 229));
+  color: var(--light-hero-bg);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+  position: relative;
+  padding: 2rem;
+}
+
 .contact-info {
     align-items: center;
     justify-content: center;
@@ -898,11 +914,13 @@ radial-gradient(
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.contact > h1 {
+.contact > h1,
+.contact-subpage > h1 {
     color: var(--light-hero-bg);
 }
 
-.contact > h4 {
+.contact > h4,
+.contact-subpage >h4 {
   z-index: 1;
 }
 
@@ -915,7 +933,7 @@ radial-gradient(
 
 }
 
-/* SVG */
+/* SVG Styles */
 
 .logo-svg {
     width: 30px;
@@ -923,10 +941,12 @@ radial-gradient(
     background-size: 30px 30px;
 }
 
+/* subpage: things I learned section */
 .logo-svg-large {
   width: 10rem;
   height: 10rem;
   background-size: 10rem;
+
 
 }
 
@@ -949,35 +969,65 @@ radial-gradient(
 }
 
 .the-project {
-  
+  border: 1px solid var(--light-tree);
 
 }
 
+
 .the-approach {
   padding-bottom: 25px;
-  
   margin: 0 auto;
+  border: 1px solid var(--purple);
   
 }
 
 .things-learned {
-  
+  border: 1px solid var(--light-tree);
 }
+
+/********************************************************************
+In "Things I Learned" section on subpages, 
+flex-group contains 3 flex divs, each with flex-icon class.
+flex-icons div contains svg img, h2, and p.
+SVG at top, P at bottom.
+
+********************************************************************/
 
 .flex-group {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  
+  
 }
 
 .flex-icons {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  justify-items: center;
-  align-self: center;
+  justify-content: center;
   width: 30%;
-  border: 1px red solid;
+  padding: 1rem;
+
+  
+  
+}
+
+.flex-icons > img {
+  align-self: flex-start;
+  margin: 1rem auto;
+  border-radius: 50%;
+  border: 1px solid var(--purple);
+}
+
+.flex-icons > h2 {
+  align-self: center;
+  margin: 0 auto;
+}
+
+.flex-icons > p {
+  align-self: flex-end;
+  margin: 0 auto;
+  padding: 0.5rem;
 }
 
 
@@ -985,6 +1035,7 @@ radial-gradient(
 
 
 .final-thoughts {
+  border: 1px solid var(--purple);
   
 }
 
@@ -1006,6 +1057,10 @@ ul.skills-sub {
   background-color: var(--light-tree);
   padding: 10px;
   margin: 4px;
+}
+
+.slideshow-example {
+  border: 1px solid var(--light-tree);
 }
 
 .subcard {
