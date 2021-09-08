@@ -996,7 +996,10 @@ SVG at top, P at bottom.
 .flex-group {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  
+  color: var(--light-text);
+  margin-top: 2rem;
   
   
 }
@@ -1008,6 +1011,10 @@ SVG at top, P at bottom.
   width: 30%;
   padding: 1rem;
 
+  background: var(--purple);
+  border: 1px solid var(--dark-tree);
+  border-radius: 5%;
+
   
   
 }
@@ -1016,18 +1023,22 @@ SVG at top, P at bottom.
   align-self: flex-start;
   margin: 1rem auto;
   border-radius: 50%;
-  border: 1px solid var(--purple);
+  border: 1px solid var(--light-text);
+  background-color: var(--light-text);
+
 }
 
 .flex-icons > h2 {
   align-self: center;
   margin: 0 auto;
+  color: var(--light-text);
 }
 
 .flex-icons > p {
   align-self: flex-end;
   margin: 0 auto;
   padding: 0.5rem;
+  color: var(--light-text);
 }
 
 
@@ -1036,6 +1047,12 @@ SVG at top, P at bottom.
 
 .final-thoughts {
   border: 1px solid var(--purple);
+  
+}
+
+.card-body > h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   
 }
 
@@ -1050,11 +1067,11 @@ ul.skills-sub {
 
 .skills-sub li {
   border-radius: 6px;
-  border: 2px solid var(--dark-purple);
+  border: 2px solid var(--light-tree);
   display: inline-block;
   background: white;
-  color: var(--dark-green);
-  background-color: var(--light-tree);
+  color: var(--dark-purple);
+  background-color: var(--wave-color);
   padding: 10px;
   margin: 4px;
 }
@@ -1070,8 +1087,6 @@ ul.skills-sub {
 }
 
 .btn-demo {
-  background-color: var(--dark-purple);
-  color: var(--light-text);
   width: 15rem;
   height: 5rem;
   font-size: 1.6rem;
@@ -1180,7 +1195,7 @@ Media Queries for Mobile and Tablet Views
 .contact {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 70%;
     flex-shrink: 1;
     padding: 0.5rem;
     
@@ -1196,6 +1211,18 @@ Media Queries for Mobile and Tablet Views
 }
 
 
+/* subpage bold icons (flex-group and flex-icon) */
+.flex-group {
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.flex-icons {
+  width: 70%;
+  margin: 1rem auto;
+  
+}
 
 
 
