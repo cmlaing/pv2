@@ -30,12 +30,12 @@ var carousel = new bootstrap.Carousel(project1carousel)
 /* 3. Change text color of navbar when on dark background */
 
 /* get height of hero section as starting point for scroll change */
-let box = document.querySelector('.jumbotron');
-let height_jumbotron = box.clientHeight;
+let jumbo = document.querySelector('.jumbotron');
+let height_jumbotron = jumbo.clientHeight;
 
 /* get height of About Me section as starting point for scroll change */
-let box2 = document.querySelector('.aboutme');
-let height_aboutme = box2.clientHeight + box.clientHeight;
+let aboutme = document.querySelector('.aboutme');
+let height_aboutme = aboutme.clientHeight + jumbo.clientHeight;
 
 
 var navbar = document.querySelector('header');
@@ -46,10 +46,25 @@ window.onscroll = function() {
   // pageYOffset or scrollY
   if (window.pageYOffset > height_jumbotron) {
     navbar.classList.add('scrolled')
-    if (window.pageYOffset > height_aboutme) {
-      navbar.classList.remove('scrolled')
-    }
   } else {
     navbar.classList.remove('scrolled')
   }
 }
+
+/* when using nav menu and clicked directly to #projects or beyond, add scrolled class */
+
+/* TODO: does it work?
+make function to add scroll class then add onclick to specific links to link to function?
+
+*/
+
+function add_scrolled(){
+  navbar.classList.add('scrolled')
+}
+ 
+navbar.on('click', function(event) {
+  event.preventDefault();
+  navbar.classList.add('scrolled')
+  
+});
+
