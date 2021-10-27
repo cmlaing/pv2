@@ -176,7 +176,7 @@ a:visited {
     
     background-color: var(--light-hero-bg);
     background-size: cover;
-    height: 80vh;
+    height: 650px; 
     position: relative;
     overflow: hidden;
     font-family: 'Work Sans', sans-serif;
