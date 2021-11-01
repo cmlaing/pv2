@@ -674,9 +674,6 @@ About Me contains flexbox (aboutme-card):
 
 .sideproject-item {
 
-  
-
-
   display: flex;
   flex-direction: column;
   flex: 0 1 calc(30% - 10px);
