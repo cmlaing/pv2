@@ -626,6 +626,54 @@ Each card with text content has items with classes:
 }
 
 /*****************************************************************************
+Featured Skills
+
+****************************************************************************/
+
+
+.featured-skills {
+  background-color: var(--purple);
+  padding-bottom: 30px;
+  padding-top: 30px;
+  color: var(--purple);
+  
+}
+
+.featured-skills > h4 {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.skill-flex {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 10px;
+  flex-wrap: wrap;
+ 
+  
+  padding-bottom: 25px;
+  width: 85%;
+
+  
+}
+.skill-pair {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-align: center;
+  
+  background-color: var(--light-head);
+  border-radius: 20%;
+  padding: 1rem;
+}
+
+
+
+/*****************************************************************************
 About Me and Contact Section
 
 About Me contains flexbox (aboutme-card): 
@@ -739,21 +787,6 @@ About Me contains flexbox (aboutme-card):
 
 /* list of skills */
 
-.skill-flex {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  flex-wrap: wrap;
-
-  
-}
-.skill-pair {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.2rem;
-  
-  text-align: center;
-}
 
 
 ul.skills {
@@ -1006,12 +1039,18 @@ radial-gradient(
 }
 
 .logo-svg-skills {
-  width: 40px;
-  height: 40px;
-  background-size: 40px 40px;
+  width: 8rem;
+  height: 8rem;
+  background-size: 8rem 8rem;
   margin: 5px;
   
 }
+
+
+
+
+
+
 
 /* subpage: things I learned section */
 .logo-svg-large {
