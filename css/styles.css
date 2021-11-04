@@ -1103,6 +1103,15 @@ radial-gradient(
   border: 1px solid var(--light-tree);
 }
 
+.shopify {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 /********************************************************************
 In "Things I Learned" section on subpages, 
 flex-group contains 3 flex divs, each with flex-icon class.
